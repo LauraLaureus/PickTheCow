@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Connection_information.h" />
+    <ClInclude Include="Conversion.h" />
+    <ClInclude Include="Coordinates3D.h" />
+    <ClInclude Include="Coordinates3DCalculation.h" />
+    <ClInclude Include="EuclideanDistance.h" />
+    <ClInclude Include="FallingObject.h" />
+    <ClInclude Include="FallingObjectsHandling.h" />
+    <ClInclude Include="FallingObjectsPositionUpdating.h" />
+    <ClInclude Include="FallingObjectsProperties.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameArea.h" />
+    <ClInclude Include="IModelFormat.h" />
+    <ClInclude Include="LaserManager.hpp" />
+    <ClInclude Include="LaserTableSpace.h" />
+    <ClInclude Include="LightAndColorAttributes.h" />
+    <ClInclude Include="ModeledObject.h" />
+    <ClInclude Include="ModeledObjectLightAndColorAttributes.h" />
+    <ClInclude Include="Model_PLY.h" />
+    <ClInclude Include="NewFallingObjectCreation.h" />
+    <ClInclude Include="Object3D.h" />
+    <ClInclude Include="OGLModeledObject.h" />
+    <ClInclude Include="OGLRoomXY.h" />
+    <ClInclude Include="OGLScore.h" />
+    <ClInclude Include="OGLTableXY.h" />
+    <ClInclude Include="OGLVertex3D.h" />
+    <ClInclude Include="OpenGLColoring.h" />
+    <ClInclude Include="RGBColor.h" />
+    <ClInclude Include="RoomXY.h" />
+    <ClInclude Include="RoomXYLightAndColorAttributes.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneLightAndColorAttributes.h" />
+    <ClInclude Include="Score.h" />
+    <ClInclude Include="ScoreLightAndColorAttributes.h" />
+    <ClInclude Include="TableXPosZNegSquareVertex3DCoordinatesCalculation.h" />
+    <ClInclude Include="TableXY.h" />
+    <ClInclude Include="TableXYLightAndColorAttributes.h" />
+    <ClInclude Include="TableXYRowVertex3DCalculation.h" />
+    <ClInclude Include="TableXYSquareVertex3DCalculation.h" />
+    <ClInclude Include="Test.h" />
+    <ClInclude Include="TestGame.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserPositionUpdating.h" />
+    <ClInclude Include="Vertex3D.h" />
+    <ClInclude Include="VertexLightAndColorAttributes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Connection_information.cpp" />
+    <ClCompile Include="Conversion.cpp" />
+    <ClCompile Include="Coordinates3D.cpp" />
+    <ClCompile Include="Coordinates3DCalculation.cpp" />
+    <ClCompile Include="EuclideanDistance.cpp" />
+    <ClCompile Include="FallingObject.cpp" />
+    <ClCompile Include="FallingObjectsHandling.cpp" />
+    <ClCompile Include="FallingObjectsPositionUpdating.cpp" />
+    <ClCompile Include="FallingObjectsProperties.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameArea.cpp" />
+    <ClCompile Include="LaserManager.cpp" />
+    <ClCompile Include="LaserTableSpace.cpp" />
+    <ClCompile Include="LightAndColorAttributes.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ModeledObject.cpp" />
+    <ClCompile Include="ModeledObjectLightAndColorAttributes.cpp" />
+    <ClCompile Include="Model_PLY.cpp" />
+    <ClCompile Include="NewFallingObjectCreation.cpp" />
+    <ClCompile Include="Object3D.cpp" />
+    <ClCompile Include="OGLModeledObject.cpp" />
+    <ClCompile Include="OGLRoomXY.cpp" />
+    <ClCompile Include="OGLScore.cpp" />
+    <ClCompile Include="OGLTableXY.cpp" />
+    <ClCompile Include="OGLVertex3D.cpp" />
+    <ClCompile Include="OpenGLColoring.cpp" />
+    <ClCompile Include="RGBColor.cpp" />
+    <ClCompile Include="RoomXY.cpp" />
+    <ClCompile Include="RoomXYLightAndColorAttributes.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneLightAndColorAttributes.cpp" />
+    <ClCompile Include="Score.cpp" />
+    <ClCompile Include="ScoreLightAndColorAttributes.cpp" />
+    <ClCompile Include="TableXPosZNegSquareVertex3DCoordinatesCalculation.cpp" />
+    <ClCompile Include="TableXY.cpp" />
+    <ClCompile Include="TableXYLightAndColorAttributes.cpp" />
+    <ClCompile Include="TableXYRowVertex3DCalculation.cpp" />
+    <ClCompile Include="TableXYSquareVertex3DCalculation.cpp" />
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="TestGame.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserPositionUpdating.cpp" />
+    <ClCompile Include="Vertex3D.cpp" />
+    <ClCompile Include="VertexLightAndColorAttributes.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC64AA10-553F-4424-95C1-5F6D7979F808}</ProjectGuid>
+    <RootNamespace>GetTheBall</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\pub\tmp\definitivo\GetTheBall\GetTheBall\LaserLibrary\include\c;C:\pub\tmp\definitivo\GetTheBall\GetTheBall\LaserLibrary\include\cpp;C:\OpenGL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\pub\tmp\definitivo\GetTheBall\GetTheBall\LaserLibrary\lib;C:\OpenGL\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies);setupapi.lib;ws2_32.lib;urg_cpp.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
